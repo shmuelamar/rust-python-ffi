@@ -1,0 +1,25 @@
+[package]
+name = "random4pyo3"
+version = "0.1.0"
+authors = ["shmuelamar <shmulikamar@gmail.com>"]
+edition = "2018"
+
+[profile.release]
+lto = true
+opt-level = 3
+
+[lib]
+name = "random4pyo3"
+crate-type = ["cdylib"]
+
+[dependencies.pyo3]
+version = "0.6.0"
+features = ["extension-module"]
+
+
+
+
+# cargo build --release && cp target/release/librandom4pyo3.so random4pyo3.so
+# echo -e "import random4pyo3\n%timeit random4pyo3.random4()" | ipython
+
+# echo -e "import random4c\n%timeit random4c.random4()" | PYTHONPATH="./build/lib.linux-x86_64-3.7/:$PYTHONPATH" ipython

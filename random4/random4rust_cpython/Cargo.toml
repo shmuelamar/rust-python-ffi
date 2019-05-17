@@ -1,0 +1,17 @@
+[package]
+name = "random4rust_cpython"
+version = "0.1.0"
+authors = ["shmuelamar <shmulikamar@gmail.com>"]
+edition = "2018"
+
+[profile.release]
+lto = true
+opt-level = 3
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies.cpython]
+version = "0.2"
+features = ["extension-module"]

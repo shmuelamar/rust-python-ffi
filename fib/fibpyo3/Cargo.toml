@@ -1,0 +1,19 @@
+[package]
+name = "fibpyo3"
+version = "0.1.1"
+authors = ["shmuelamar <shmulikamar@gmail.com>"]
+edition = "2018"
+description = "fibonacci series implementation with rust for python"
+readme = "README.md"
+
+[profile.release]
+lto = true
+opt-level = 3
+
+[lib]
+name = "fibpyo3"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = {version = "0.6.0", features = ["extension-module"]}
+fibrust = { path = "../fibrust" }

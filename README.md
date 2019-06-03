@@ -2,6 +2,8 @@
 
 These repo contains materials for my talk titled **"Rust is the Next Python FFI"**.
 
+the talk slides - [Rust is the next Python FFI.pdf](Rust is the next Python FFI.pdf)
+
 # Dependencies
 
 * cargo + rustc nightly (for PyO3)
@@ -58,3 +60,12 @@ This example shows a heavy numeric calculation on a foreign language called from
 ```bash
 $ make test
 ```
+
+
+**Benchmark System Info:**
+ 
+* Ubuntu 18.04 4.15.0-48-generic x86_64 Intel(R) Core(TM) i7-7600U CPU @ 2.80GHz
+* gcc 7.4.0
+* cargo 1.36.0-nightly
+* rustc 1.36.0-nightly
+* Python 3.7.2

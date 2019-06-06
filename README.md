@@ -2,7 +2,7 @@
 
 These repo contains materials for my talk titled **"Rust is the Next Python FFI"**.
 
-the talk slides - [Rust is the next Python FFI.pdf](Rust is the next Python FFI.pdf)
+the talk slides - [Rust is the next Python FFI.pdf](./Rust%20is%20the%20next%20Python%20FFI.pdf)
 
 # Dependencies
 
